@@ -1,7 +1,7 @@
 # frozen_string_literal: true
 
 class Bucket
-  PRICE = { 'potato' => 10, 'carrot' => 20, 'tomato' => 30 }.freeze
+  PRICE = { 'potato' => 10, 'carrot' => 15, 'tomato' => 25 }.freeze
 
   attr_accessor :vegetable
 

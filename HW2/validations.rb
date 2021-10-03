@@ -2,7 +2,7 @@
 
 module Validations
   PASS_SIZE = 8
-  MSG_SIZE = 20
+  MESSAGE_SIZE = 20
 
   def check(message)
     type = if message == @username
@@ -19,7 +19,7 @@ module Validations
       raise ArgumentError,
             "The field '#{type}' must be at least 8 characters long!"
     end
-    if message.size > MSG_SIZE && message == @text
+    if message.size > MESSAGE_SIZE && message == @text
       raise ArgumentError,
             "The field '#{type}' must be between 1 and 280 characters long!"
     end
