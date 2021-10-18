@@ -5,3 +5,5 @@
 #
 #   movies = Movie.create([{ name: 'Star Wars' }, { name: 'Lord of the Rings' }])
 #   Character.create(name: 'Luke', movie: movies.first)
+ActiveRecord::Base.connection.execute( "INSERT INTO users VALUES(
+    1, 'John', 'Doe', 'JohnDoe', 30, '#{Time.current}', '#{Time.current}')")
